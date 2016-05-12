@@ -24,9 +24,9 @@ public class Main {
         System.out.println("Starting Threads");
         for (int x = 0; x < NUMBER_THREADS; x++) {
             Thread.sleep(20);
-             new ApacheClient().start();
+            //new ApacheClient().start();
             // new TimeoutApacheClient().start();
-            // new HystrixClient().start();
+            new HystrixClient().start();
         }
         System.out.println(NUMBER_THREADS + " Threads running...");
     }
